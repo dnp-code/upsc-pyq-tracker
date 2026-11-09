@@ -1,0 +1,19 @@
+site_name: UPSC Mains GS & Anthropology PYQs with Solutions
+theme:
+  name: material
+  features:
+    - navigation.tabs # Creates a top navigation bar
+    - search.suggest # Auto-suggests keywords (great for finding specific topics/thinkers)
+nav:
+  - Home: index.md
+  - GS Paper 1:
+      - Modern History: gs1/modern-history.md
+      - Indian Society: gs1/indian-society.md
+
+  - GS Paper 2:
+      - Polity: gs2/modern-history.md
+      - Governance: gs2/indian-society.md
+
+  - Anthropology:
+      - Paper 1: anthro/paper-1.md
+      - Paper 2: anthro/paper-2.md
