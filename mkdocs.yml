@@ -1,16 +1,48 @@
-site_name: UPSC Mains GS & Anthropology PYQs with Solutions
+site_name: UPSC GS & Anthropology PYQs with Solutions
+
 theme:
   name: material
   features:
-    - navigation.tabs # Creates a top navigation bar
-    - search.suggest # Auto-suggests keywords (great for finding specific topics/thinkers)
+    - navigation.tabs
+    - search.suggest
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 nav:
   - Home: index.md
   - GS Paper 1:
-      - Modern History: gs1/modern-history.md
-      - Indian Society: gs1/indian-society.md
+      - History: gs1/history.md
+      - Geography: gs1/geography.md
+      - Indian Society: gs1/society/indian-society.md
 
   - GS Paper 2:
+      - Polity: gs2/modern-history.md
+      - Governance: gs2/indian-society.md
+
+  - GS Paper 3:
+      - Economy: gs3/
+      - Agriculture: gs3/
+
+  - GS Paper 4:
       - Polity: gs2/modern-history.md
       - Governance: gs2/indian-society.md
 
